@@ -57,9 +57,8 @@ body {
 }
 .startBtn.hovered {
     cursor: pointer;
-    color: var(--main-col);
-    background: var(--text-col);
-    box-shadow: var(--main-col) 0px 0px 15px 10px;
+    transform: translateY(-3px);
+    box-shadow: none
 }
 .amount {
     display: flex;
@@ -87,6 +86,12 @@ body {
     color: var(--main-col);
     text-align: center;
 }
+.startBtn:active {
+    color: var(--main-col);
+    background: var(--text-col);
+    box-shadow: none;
+}
+
 
 @media(max-width: 767px) {
     .wrapper {
@@ -97,10 +102,7 @@ body {
         background: var(--main-col);
         box-shadow: 5px 5px #ffffff4d;
     }
-    .startBtn:active {
-        color: var(--main-col);
-        background: var(--text-col);
-        box-shadow: var(--main-col) 0px 0px 15px 10px;
+    .startBtn {
+        transition: .1s;
     }
-
 }

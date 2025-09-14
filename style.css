@@ -97,9 +97,10 @@ body {
         background: var(--main-col);
         box-shadow: 5px 5px #ffffff4d;
     }
-    .startBtn.hovered:active {
+    .startBtn:active {
         color: var(--main-col);
         background: var(--text-col);
         box-shadow: var(--main-col) 0px 0px 15px 10px;
     }
+
 }
